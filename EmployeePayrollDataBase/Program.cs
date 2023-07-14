@@ -5,7 +5,10 @@
         static void Main(string[] args)
         {
 
-            PayrollService.CheckConnection();
+            //PayrollService.CheckConnection();
+
+            PayrollService obj = new PayrollService();
+            obj.Display();
         }
     }
 }
