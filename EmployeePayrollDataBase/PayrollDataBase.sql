@@ -50,3 +50,28 @@ WHERE Name = 'Jack' OR Name = 'Smith' OR Name = 'John' OR Name = 'Snow';
 UPDATE Employee_Payroll SET Gender = 'F'
 WHERE Name = 'Julie' OR NAME = 'Monica';
 
+--UC7
+
+SELECT SUM(Salary) AS Female_Salary FROM Employee_Payroll
+WHERE Gender = 'F' GROUP BY Gender;
+
+SELECT SUM(Salary) AS Male_Salary FROM Employee_Payroll
+WHERE Gender = 'M' GROUP BY Gender;
+
+SELECT AVG(Salary) AS Avg_Female_Salary FROM Employee_Payroll
+WHERE Gender = 'F' GROUP BY Gender;
+
+SELECT AVG(Salary) AS Avg_Male_Salary FROM Employee_Payroll
+WHERE Gender = 'M' GROUP BY Gender;
+
+SELECT MAX(Salary) AS Max_Female_Salary FROM Employee_Payroll
+WHERE Gender = 'F' GROUP BY Gender;
+
+SELECT MAX(Salary) AS Max_Male_Salary FROM Employee_Payroll
+WHERE Gender = 'M' GROUP BY Gender;
+
+SELECT MIN(Salary) AS Min_Female_Salary FROM Employee_Payroll
+WHERE Gender = 'F' GROUP BY Gender;
+
+SELECT MIN(Salary) AS Min_Male_Salary FROM Employee_Payroll
+WHERE Gender = 'M' GROUP BY Gender;
