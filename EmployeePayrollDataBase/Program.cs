@@ -7,8 +7,10 @@
 
             //PayrollService.CheckConnection();
 
-            PayrollService obj = new PayrollService();
-            obj.Display();
+            //PayrollService obj = new PayrollService();
+            //obj.Display();
+
+            PayrollService.UpdateIntoTable();
         }
     }
 }

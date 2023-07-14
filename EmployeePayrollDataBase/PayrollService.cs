@@ -80,5 +80,26 @@ namespace EmployeePayrollDataBase
                 con.Close();
             }
         }
+
+        public static void UpdateIntoTable()
+        {
+            try
+            {
+                string query = "UPDATE Employee_Payroll SET Salary = 3000000 WHERE Id = 7";
+                SqlCommand cmd = new SqlCommand(query, con);
+                con.Open();
+                cmd.ExecuteNonQuery();
+                Console.WriteLine("Data Updated into the table.");
+            }
+            catch (Exception e)
+            {
+
+                Console.WriteLine("Somethiing went Wrong." + e);
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
     }
 }
