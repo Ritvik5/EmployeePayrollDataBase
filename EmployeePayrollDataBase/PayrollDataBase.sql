@@ -14,7 +14,7 @@ CREATE TABLE Employee_Payroll
 	StartDate DATE
 );
 
-SELECT * FROM Employee_Payroll;
+
 
 TRUNCATE TABLE Employee_Payroll;
 
@@ -25,3 +25,7 @@ VALUES('Jack',25000,'2019-05-08'),
       ('Smith',15000,'2022-01-01'),
       ('John',35000,'2019-08-19'),
       ('Snow',45000,'2018-09-20');
+
+--UC4(Retrieving All the Records)
+
+SELECT * FROM Employee_Payroll;
