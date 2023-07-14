@@ -75,3 +75,10 @@ WHERE Gender = 'F' GROUP BY Gender;
 
 SELECT MIN(Salary) AS Min_Male_Salary FROM Employee_Payroll
 WHERE Gender = 'M' GROUP BY Gender;
+
+--UC8
+
+ALTER TABLE Employee_Payroll ADD Phone VARCHAR(20), Address VARCHAR(50), Department VARCHAR(20);
+
+
+SELECT * FROM Employee_Payroll;
