@@ -14,8 +14,6 @@ CREATE TABLE Employee_Payroll
 	StartDate DATE
 );
 
-
-
 TRUNCATE TABLE Employee_Payroll;
 
 --UC3(Inserting Records in Table)
@@ -29,3 +27,11 @@ VALUES('Jack',25000,'2019-05-08'),
 --UC4(Retrieving All the Records)
 
 SELECT * FROM Employee_Payroll;
+
+--UC5
+
+SELECT Salary AS Jack_Salary FROM Employee_Payroll 
+WHERE Name = 'Jack';
+
+SELECT * FROM Employee_Payroll
+WHERE StartDate between '2019-01-01' and getdate();
