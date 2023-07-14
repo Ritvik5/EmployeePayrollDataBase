@@ -155,3 +155,30 @@ VALUES('Terissa',15000,'2017-01-01','F','878878787878','Pune','HR',14000,2000,20
 	  ('Terissa',16000,'2017-01-01','F','878878787878','Lucknow','Marketing',13000,2000,2000,9000);
 
 SELECT * FROM Employee_Payroll;
+
+UPDATE Employee_Payroll
+SET Department = 'Sales'
+WHERE Id = 7;
+
+ALTER TABLE Employee_Payroll
+DROP COLUMN Department;
+
+
+CREATE TABLE Employee_Department
+(
+	DepID INT PRIMARY KEY IDENTITY(1,1),
+	DepartmentName VARCHAR(30),
+	EmployeeID INT FOREIGN KEY REFERENCES Employee_Payroll(Id)
+);
+
+SELECT * FROM Employee_Department;
+
+INSERT INTO Employee_Department(DepartmentName,EmployeeID) 
+VALUES('CS',1),
+	  ('CS',2),
+	  ('CS',3),
+	  ('CS',4),
+	  ('CS',5),
+	  ('CS',6),
+	  ('Sales',7),
+	  ('Marketing',8);
