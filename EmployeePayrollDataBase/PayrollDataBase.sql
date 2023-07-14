@@ -82,3 +82,68 @@ ALTER TABLE Employee_Payroll ADD Phone VARCHAR(20), Address VARCHAR(50), Departm
 
 
 SELECT * FROM Employee_Payroll;
+
+--UC9
+
+ALTER TABLE Employee_Payroll ADD BasicPay MONEY, Deductions MONEY, TaxablePay MONEY, NetPay MONEY;
+
+UPDATE Employee_Payroll
+SET Phone = '989898989',
+    Address = 'Bangalore',
+	Department = 'CS',
+	BasicPay = 22000,
+	Deductions = 3000,
+	TaxablePay = 1500,
+	NetPay = 17500
+WHERE Id = 1;
+
+UPDATE Employee_Payroll
+SET Phone = '8989898989',
+    Address = 'Delhi',
+	Department = 'CS',
+	BasicPay = 12000,
+	Deductions = 3000,
+	TaxablePay = 1500,
+	NetPay = 7500
+WHERE Id = 2;
+
+UPDATE Employee_Payroll
+SET Phone = '74747474747',
+    Address = 'Mumbai',
+	Department = 'CS',
+	BasicPay = 32000,
+	Deductions = 3000,
+	TaxablePay = 1500,
+	NetPay = 27500
+WHERE Id = 3;
+
+UPDATE Employee_Payroll
+SET Phone = '787878787878',
+    Address = 'Pune',
+	Department = 'CS',
+	BasicPay = 42000,
+	Deductions = 3000,
+	TaxablePay = 1500,
+	NetPay = 37500
+WHERE Id = 4;
+
+UPDATE Employee_Payroll
+SET Phone = '85858585858',
+    Address = 'Kolkata',
+	Department = 'CS',
+	BasicPay = 22000,
+	Deductions = 3000,
+	TaxablePay = 1500,
+	NetPay = 17500
+WHERE Id = 5;
+
+UPDATE Employee_Payroll
+SET Phone = '96969696969',
+    Address = 'Kochi',
+	Department = 'CS',
+	BasicPay = 19000,
+	Deductions = 3000,
+	TaxablePay = 1500,
+	NetPay = 14500
+WHERE Id = 6;
+
