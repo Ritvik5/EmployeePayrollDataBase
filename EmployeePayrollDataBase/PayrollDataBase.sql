@@ -147,3 +147,11 @@ SET Phone = '96969696969',
 	NetPay = 14500
 WHERE Id = 6;
 
+
+--UC10
+
+INSERT INTO Employee_Payroll(Name,Salary,StartDate,Gender,Phone,Address,Department,BasicPay,Deductions,TaxablePay,NetPay) 
+VALUES('Terissa',15000,'2017-01-01','F','878878787878','Pune','HR',14000,2000,2000,10000),
+	  ('Terissa',16000,'2017-01-01','F','878878787878','Lucknow','Marketing',13000,2000,2000,9000);
+
+SELECT * FROM Employee_Payroll;
