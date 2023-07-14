@@ -11,7 +11,17 @@ CREATE TABLE Employee_Payroll
 	Id INT PRIMARY KEY IDENTITY(1,1),
 	Name VARCHAR(20),
 	Salary MONEY,
-	StartDate Date
+	StartDate DATE
 );
 
 SELECT * FROM Employee_Payroll;
+
+TRUNCATE TABLE Employee_Payroll;
+
+--UC3(Inserting Records in Table)
+
+INSERT INTO Employee_Payroll(Name,Salary,StartDate) 
+VALUES('Jack',25000,'2019-05-08'),
+      ('Smith',15000,'2022-01-01'),
+      ('John',35000,'2019-08-19'),
+      ('Snow',45000,'2018-09-20');
